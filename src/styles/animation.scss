@@ -1,0 +1,87 @@
+.js-scroll {
+	opacity: 0;
+	transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+	opacity: 1;
+}
+
+.scrolled.fade-in-bottom {
+	animation: fade-in-bottom 1s ease-in-out both;
+}
+
+@keyframes fade-in-bottom {
+	0% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.scrolled .fade-height-bottom-1 {
+	animation: fade-height-bottom-1 1s ease-in-out 0.5s both alternate;
+}
+
+@keyframes fade-height-bottom-1 {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 80px;
+	}
+}
+.scrolled .fade-height-bottom-2 {
+	animation: fade-height-bottom-2 1s ease-in-out 1s both alternate;
+}
+
+@keyframes fade-height-bottom-2 {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 120px;
+	}
+}
+.scrolled .fade-height-bottom-3 {
+	animation: fade-height-bottom-3 1s ease-in-out 1.5s both alternate;
+}
+
+@keyframes fade-height-bottom-3 {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 180px;
+	}
+}
+
+.breath-bg {
+	animation: breath-bg 5s linear 0s both infinite;
+}
+
+@keyframes breath-bg {
+	0% {
+		background-color: #474443;
+		opacity: 0.3;
+	}
+	20% {
+		background-color: var(--app-color-theme);
+		opacity: 0.8;
+	}
+	50% {
+		background-color: var(--app-color-theme);
+		opacity: 1;
+	}
+	80% {
+		background-color: var(--app-color-theme);
+		opacity: 0.8;
+	}
+	100% {
+		background-color: #474443;
+		opacity: 0.3;
+	}
+}
